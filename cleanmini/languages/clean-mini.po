@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-28 21:35-0300\n"
+"PO-Revision-Date: 2021-11-28 21:35-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: search.php:45
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template/customization.php:37
+msgid "Page Customization"
+msgstr ""
+
+#: template/customization.php:60
+msgid "Size and position of the page"
+msgstr ""
+
+#: template/customization.php:61
+msgid "Sets the size and the position of the page"
+msgstr ""
+
+#: template/customization.php:81
+msgid "Cover settings"
+msgstr ""
+
+#: template/customization.php:99
+msgid "Cover picture"
+msgstr ""
+
+#: template/customization.php:114
+msgid "Page Setttings"
+msgstr ""
+
+#: template/customization.php:132
+msgid "Text Size"
+msgstr ""
+
+#: template/customization.php:133
+msgid "Choose between small, medium and big font sizes."
+msgstr ""
+
+#: template/customization.php:156
+msgid "Title Behaviour"
+msgstr ""
+
+#: template/customization.php:157
+msgid "No behaviour, same tab or new tab"
+msgstr ""
+
+#: template/customization.php:179
+msgid "Set the color for the text"
+msgstr ""
+
+#: template/customization.php:205
+msgid "Text secondary color"
+msgstr ""
+
+#: template/customization.php:206
+msgid "Changes the secondary color of the text"
+msgstr ""
+
+#: template/customization.php:233
+msgid "H1 color"
+msgstr ""
+
+#: template/customization.php:234
+msgid "Set the color for h1 content"
+msgstr ""
+
+#: template/customization.php:251
+msgid "Background Settings"
+msgstr ""
+
+#: template/customization.php:265
+msgid "Background Color"
+msgstr ""
+
+#: template/customization.php:294
+msgid "Background Image"
+msgstr ""
+
+#: template/customization.php:295
+msgid "If none then the Background Color will be applied."
+msgstr ""
+
+#: template/customization.php:315
+msgid "Custom Background Image Options"
+msgstr ""
+
+#: template/customization.php:316
+msgid "Changes the look of your image."
+msgstr ""
+
+#: template/customization.php:341
+msgid "Post Container Background Color"
+msgstr ""
+
+#: template/customization.php:373
+msgid "Transparent post on mobile"
+msgstr ""
+
+#: template/customization.php:381
+msgid "Custom Highlight Color"
+msgstr ""
+
+#: template/customization.php:398
+msgid "Highlight Color"
+msgstr ""
+
+#: template/page-class.php:59
+msgid "Read More"
+msgstr ""

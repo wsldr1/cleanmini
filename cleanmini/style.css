@@ -1,0 +1,575 @@
+/*
+Theme Name: Clean Mini
+Theme URI: https://github.com/wsldr1/cleanmini
+Author: Wsldr
+Author URI: https://github.com/wsldr1/
+Description: Clean, simple and practical. If this is all you need, then this theme is for you.
+Requires at least: 5.3
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clean-mini
+Tags:
+*/
+
+/* abril-fatface-regular - latin */
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/abril-fatface-v12-latin-regular.eot); /* IE9 Compat Modes */
+  src: local(''),
+       url(./fonts/abril-fatface-v12-latin-regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+       url(./fonts/abril-fatface-v12-latin-regular.woff2) format('woff2'), /* Super Modern Browsers */
+       url(./fonts/abril-fatface-v12-latin-regular.woff) format('woff'), /* Modern Browsers */
+       url(./fonts/abril-fatface-v12-latin-regular.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(./fonts/abril-fatface-v12-latin-regular.svg#AbrilFatface) format('svg'); /* Legacy iOS */
+}
+
+:root{
+  --bc-margin-left:calc(50% - 400px);
+  --bc-margin-right:calc(50% - 400px);
+  --h1-size:5.875rem;
+  --post-h1:1.688rem;
+  --content-p-size:1.25rem;
+  --p-size1:1.25rem;
+  --mb-content-p-size:10px;
+  --bc-image-url:'colocar o url da imagem depois';
+  --margin-1:1em;
+  --margin-2:2em;
+  --menu-margin: 25%;
+  --custom-background-color: #9ed7b4;
+  --highlight-color: #00c0dd;
+  --highlight-color2: #00c0dd;
+  --highlight-color3: #00c0dd;
+  --text-color: #000000;
+  --text-second-color: #8224e3;
+  --post-background-color: #72927c;
+  --h1-color: #4441d3;
+}
+
+body{
+  font-family: 'Abril Fatface', 'Times New Roman', Times, serif;
+  background-attachment: inherit;
+  margin-top: 0px;
+  
+}
+
+.banner{
+  
+  width:inherit;
+  list-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 2em;
+  box-shadow: 10px 10px rgb(0 0 0 / 50%);
+  border-radius: 0px 20px 20px 20px;
+}
+
+.banner > .header-container{
+  display: flex;
+  position: absolute;
+  z-index:1;
+  width:auto;
+  height:auto;
+  flex-wrap: no-wrap;
+}
+.banner > ul{
+  list-style-type:none;
+  size:var(--post-h1);;
+}
+
+.banner > .header-container >h1 > a, .banner > .header-container > h1{
+  size:var(--post-h1);
+  text-shadow: 2px 2px var(--text-second-color);
+  transition: color, text-shadow 0.5s;
+  color: var(--h1-color);
+  text-decoration: none;
+  display: block;
+}
+.banner >.header-container >h1>a:hover , .banner >.header-container > h1:hover{
+  color:var(--text-second-color);
+  text-shadow: -2px -2px var(--h1-color);
+  text-decoration: none;
+}
+
+.banner >.header-container > h2{
+  size: var(--post-h1);
+  text-shadow: 2px 2px var(--text-second-color);
+  transition: color, text-shadow 0.5s;
+  text-decoration: none;
+  margin-top: 3em;
+  position: absolute;
+  width: 20em;
+  color: var(--text-color);
+}
+
+.banner >.header-container > h2:hover{
+  color: var(--text-second-color);
+  text-shadow: -2px -2px var(--text-color);
+  text-decoration: none;
+}
+
+.search-form{
+  size:var(--post-h1);
+  margin-left:100px;
+  text-shadow: 2px 2px #0095FF;
+  transition: color, text-shadow 0.5s;
+}
+
+.search-form .submit-form{
+  size:var(--post-h1);
+  margin-left:100px;
+  text-shadow: 2px 2px #0095FF;
+  transition: color, text-shadow 0.5s;
+}
+
+.banner > .banner-img{
+ 
+  
+  background-size:auto;
+  height:100%;
+  background-position:center ;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position: relative;
+  z-index:-1;
+  transition:margin-bottom 1s;
+}
+
+
+.banner > img{
+ 
+  
+  background-size:auto;
+  height:100%;
+  background-position:center ;
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+  position: relative;
+  z-index:-1;
+  transition:margin-bottom 1s;
+  margin-bottom: 2em;
+}
+
+
+
+
+
+body{
+  margin-left:var(--bc-margin-left);
+  background-color:var(--custom-background-color);
+  margin-right: var(--bc-margin-right);
+}
+
+.post-container{
+  width:100%;
+  background-color: var(--post-background-color);
+  height:auto;
+  z-index:1;
+  position:inherit;
+  margin-top: 1em;
+  margin-bottom:1em;
+  padding-bottom:2em;
+  box-shadow: 10px 10px rgb(0 0 0 / 50%);
+  border-radius: 0px 20px 20px 20px;
+  
+}
+.post-container > .content{
+  margin-left:var(--margin-1);
+  margin-right:var(--margin-1);
+  color: var(--text-color);
+  font-size: var(--content-p-size);
+}
+.post-container > .content:nth-child(1){
+  left: 2%;
+  position: relative;
+  line-break: auto;
+  word-break: break-word;
+  margin-right: 2%;
+}
+
+.post-container > h1 , .post-container > a{
+  position:relative;
+  font-size:4rem;
+  left:2%;
+  text-shadow: 2px 2px var(--text-second-color);
+  transition: color , text-shadow 0.5s;
+  border:none;
+  color: var(--h1-color);
+  text-decoration: none;
+  margin-right: 2%;
+  line-height: 1em;
+  margin-top: 0px;
+  display: block;
+  word-break: break-word;
+}
+.post-container > h1:hover ,.post-container > a:hover{
+  color:var(--text-second-color);
+  text-shadow: -2px -2px var(--h1-color);
+  text-decoration: none;
+}
+
+.post-container > .date{
+  position:relative;
+
+}
+
+.post-container > .date > p{
+      margin-left: var(--margin-1);
+      font-size: 1rem;
+      color: var(--text-color);
+      text-shadow: 1px 1px var(--text-second-color);
+      transition: text-shadow, color 0.5s;
+
+}
+
+.post-container > .date > p:hover{
+  text-shadow: -1px -1px var(--text-color);
+  color: var(--text-second-color);
+}
+
+footer{
+  padding-bottom: 2em;
+}
+.expand-btn{
+  width:100%;
+  height:auto;
+  
+}
+.post-container > .expand-btn > .rect> a{
+  size:20px;
+  transition: color 0.5s;
+}
+
+.date-bc{
+  fill: var(--highlight-color);
+}
+
+#extra-text{
+  display:none;
+  height:inherit;
+  margin-left:var(--margin-1);
+  margin-right:var(--margin-1);
+}
+
+
+br{
+  line-height:10em;
+}
+
+.rect{
+  width:100%;
+  height:100%;
+  background-color:rgba(255,255,255,0.5);
+  transition:background-color 0.5s;
+  filter:drop-shadow(-10px 1-0px -10px -10px rgba(0,0,0,0.5))
+}
+.rect:hover{
+  background-color:var(--highlight-color2) ;
+}
+
+.exp-col{
+  margin-left:var(--margin-1);
+}
+.exp-col:hover{
+  color:var(--text-second-color);
+}
+
+
+
+.header-menu{
+  color: var(--text-color);
+  display: flex;
+  list-style: none;
+  font-size: var(--content-p-size);
+  padding-top: 6em;
+  flex-wrap: wrap;
+  margin-right: 1em;
+  padding-bottom: 3em;
+}
+
+.header-menu > *{
+  color: var(--text-color);
+  font-size: var(--content-p-size);
+}
+
+.header-menu > li{
+  margin-right: 1em;
+  color: var(--text-color);
+  width: var(--margin-menu);
+}
+
+.header-menu > li > *, .menu-item-has-children, .menu-item-has-children > *, .menu-item-has-children > ul > *
+{
+  color: var(--text-color);
+  font-size: var(--content-p-size);
+  text-decoration: none;
+  text-shadow: 2px 2px var(--text-second-color);
+  transition: color, text-shadow 0.5s;
+  list-style: none;
+  display: flex;
+  flex-wrap: inherit;
+}
+.menu-item-has-children > ul{
+  display: contents;
+}
+.menu-item-has-children > ul > *{
+  margin-left: 0.5em;
+}
+.menu-item-has-children > ul > li > a{
+  color: var(--text-color);
+  text-shadow: 2px 2px var(--text-second-color);
+  transition: color, text-shadow 0.5s;
+  text-decoration: none;
+}
+.menu-item-has-children > ul > li > a:hover, .header-menu > li  >a:hover{
+  color: var(--text-second-color);
+  text-shadow: -2px -2px var(--text-color);
+}
+
+.post-categories{
+  list-style: none;
+}
+.sidebar{
+  background-size: auto ; 
+  background-size:cover; 
+  list-style:none; 
+  width:100%;
+  background-color: var(--post-background-color);
+  height:auto;
+  z-index:1;
+  position:inherit;
+  border-radius: 0px 20px 20px 20px;
+  box-shadow: 10px 10px rgb(0 0 0 / 50%);
+}
+.sodebar > li{
+  margin-top: 1em;
+  margin-bottom:1em;
+  padding-bottom:2em;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+.sidebar > img{
+  background-size: cover;
+}
+.comment-respond,
+.entry-pings,
+.entry-comments {
+    color: var(--text-color);
+    padding: 20px 45px 40px 45px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.3);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    border-left: 4px solid #444;
+   
+}
+.entry-comments h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+}
+.comment-respond h3,
+.entry-pings h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.comment-respond {
+    padding-bottom: 5%;
+    margin: 0.5em 1em 1em 0.5em;
+    border-left: none !important;
+
+}
+.comment-header {
+    color: #adaeb3;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.comment-header cite a {
+    border: none;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+.comment-header .comment-meta a {
+    border: none;
+    color: #adaeb3;
+}
+li.comment {
+    background-color: rgba(0,0,0,0.3)#fff;
+    border-right: none;
+    margin-top: 1em;
+}
+.comment-content {
+    clear: both;
+    overflow: hidden;
+}
+.comment-list li {
+    font-size: 14px;
+    padding: 20px 30px 20px 50px;
+}
+.comment-list .children {
+    margin-top: 40px;
+    border: 1px solid rgb(0, 226, 49);
+}
+.comment-list li li {
+    background-color: #0000ff;
+}
+.comment-list li li li {
+    background-color: rgb(160, 0, 0);
+}
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+    width: 50%;
+}
+.comment-respond label {
+    display: block;
+    margin-right: 12px;
+}
+.entry-comments .comment-author {
+    margin-bottom: 0;
+    position: relative;
+}
+.entry-comments .comment-author img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    left: -80px;
+    top: -5px;
+    position: absolute;
+    width: 60px;
+    margin-top: 1em;
+}
+.entry-pings .reply {
+    display: none;
+}
+.form-allowed-tags {
+    background-color: #f5f5f5;
+    font-size: 16px;
+    padding: 24px;
+}
+.comment-reply-link{
+    cursor: pointer;
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 3px;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 4px 10px 4px;
+    text-transform: uppercase;
+    width: auto;
+    margin-bottom: 1em;
+}
+.comment-reply-link:hover{
+    color: var(--highlight-color3);
+}
+.comment-notes{
+    display:none;   
+}
+
+#comment, #author, #email, #url{
+  background-color: var(--highlight-color2);
+  color: var(--text-color);
+  border:0px;
+}
+
+.comment-form > p > #submit{
+  background-color:var(--highlight-color2);
+  padding: 5px 10px 5px;
+  border: 2px var(--highlight-color);
+  border-radius: 1px;
+  transition: background-color, 0.2s;
+}
+.comment-form > p > a{
+  color: var(--text-second-color);
+  size: var(--p-size1);
+}
+
+
+.sidebar > input.wp-block-search{
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  border-radius: 2px;
+}
+
+
+
+#comment{
+  resize: none;
+}
+
+.sidebar > button.wp-block-search {
+  background-color: var(--highlight-color);
+  border-radius: 2px solid var(--highlight-color);
+  color: var(--text-color);
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--content-p-size);
+}
+
+button{
+  background: var(--highlight-color);
+  border-radius: 2px solid var(--highlight-color);
+  color: var(--text-color);
+  
+}
+
+@media only screen and (max-width : 1000px){
+  :root{
+
+    --h1-size:1.400rem;
+    --post-h1:1.4rem;
+    --content-p-size:1rem;
+    --p-size1:1rem;
+    --mb-content-p-size:10px;
+  }
+  body{
+   margin-left:0px;
+    margin-right:0px;
+  }
+  .banner > .header-container >h1{
+    margin-left:0px;
+    margin-right:10px;
+  }
+  .post-container {
+    top:-400px;
+  }
+  .content img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+}
+
+@media only screen and (max-width : 500px)
+{
+
+    :root{
+
+      --h1-size:1.200rem;
+      --post-h1:1.2rem;
+      --content-p-size:1rem;
+      --p-size1:1rem;
+      --mb-content-p-size:10px;
+    }
+    .header-menu{
+      padding-top: 10em;
+      float: unset;
+      flex-direction: column;
+      
+    }
+    .banner >.header-container > h2{
+      width: 10em;
+    }
+    
+}
